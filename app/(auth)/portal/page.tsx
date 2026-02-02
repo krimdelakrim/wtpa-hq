@@ -8,6 +8,8 @@ import { supabaseBrowser } from "@/lib/supabase/client";
 import { addDays, getWeekStart, toISODate } from "@/lib/utils";
 
 export default function PortalHome() {
+  const appStore = process.env.NEXT_PUBLIC_APPSTORE_URL ?? "#";
+  const playStore = process.env.NEXT_PUBLIC_PLAYSTORE_URL ?? "#";
   const supabase = supabaseBrowser();
   const weekStart = useMemo(() => getWeekStart(new Date()), []);
   const weekStartISO = toISODate(weekStart);
