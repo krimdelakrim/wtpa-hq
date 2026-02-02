@@ -1,5 +1,7 @@
 "use client";
 
+export const dynamic = "force-dynamic";
+
 import type { ReactNode } from "react";
 import Protected from "@/components/Protected";
 import Header from "@/components/Header";
@@ -14,4 +16,5 @@ export default function PortalLayout({ children }: { children: ReactNode }) {
     </Protected>
   );
 }
+
 
