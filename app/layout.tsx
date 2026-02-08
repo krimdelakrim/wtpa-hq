@@ -6,7 +6,7 @@ export const metadata = {
   description: "Where The Party At — HQ site + outreach ops.",
 };
 
-export const dynamic = "force-dynamic";
+
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

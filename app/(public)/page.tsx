@@ -2,8 +2,8 @@ import NeonCard from "@/components/NeonCard";
 import NeonButton from "@/components/NeonButton";
 
 export default function Home() {
-  const appStore = process.env.NEXT_PUBLIC_APPSTORE_URL!;
-  const playStore = process.env.NEXT_PUBLIC_PLAYSTORE_URL!;
+  const appStore = process.env.NEXT_PUBLIC_APPSTORE_URL ?? "#";
+  const playStore = process.env.NEXT_PUBLIC_PLAYSTORE_URL ?? "#";
 
   return (
     <div className="space-y-10">
@@ -20,9 +20,22 @@ export default function Home() {
 
           <div className="flex flex-wrap gap-3 pt-2">
             <NeonButton href="/vendors">For Vendors</NeonButton>
-            <NeonButton href="/employees" variant="ghost">For Employees</NeonButton>
-            <a href={appStore} target="_blank" rel="noreferrer"><NeonButton>App Store</NeonButton></a>
-            <a href={playStore} target="_blank" rel="noreferrer"><NeonButton>Google Play</NeonButton></a>
+            <NeonButton href="/employees" variant="ghost">
+              For Employees
+            </NeonButton>
+
+            {/* Portal requires login */}
+            <NeonButton href="/login?next=%2Fportal" variant="ghost">
+              Employee Login
+            </NeonButton>
+
+            {/* Store links */}
+            <a href={appStore} target="_blank" rel="noreferrer">
+              <NeonButton>App Store</NeonButton>
+            </a>
+            <a href={playStore} target="_blank" rel="noreferrer">
+              <NeonButton>Google Play</NeonButton>
+            </a>
           </div>
         </div>
       </section>
@@ -41,3 +54,4 @@ export default function Home() {
     </div>
   );
 }
+

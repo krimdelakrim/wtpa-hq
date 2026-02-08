@@ -22,14 +22,26 @@ export default function Employees() {
           </ul>
         </NeonCard>
 
-        <NeonCard title="Apply / Login">
-          <p className="mb-4">Create an account, accept the employee agreement, and start logging outreach weekly.</p>
-          <div className="flex gap-3">
-            <NeonButton href="/login">Login / Apply</NeonButton>
-            <NeonButton href="/waitlist" variant="ghost">Join Waitlist</NeonButton>
-          </div>
-        </NeonCard>
+        <div className="grid gap-5">
+          <NeonCard title="Apply">
+            <p className="mb-4">
+              New applicants: start here. Once approved, you’ll be able to log in and track outreach.
+            </p>
+            <NeonButton href="/employees/apply">Apply</NeonButton>
+          </NeonCard>
+
+          <NeonCard title="Login">
+            <p className="mb-4">
+              Approved employees: log in to access the outreach portal.
+            </p>
+            <NeonButton href="/login?next=%2Fportal" variant="ghost">
+              Login
+            </NeonButton>
+          </NeonCard>
+        </div>
       </div>
     </div>
   );
 }
+
+
