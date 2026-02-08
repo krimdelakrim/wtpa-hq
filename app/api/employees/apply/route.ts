@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { supabaseServer } from "@/src/lib/supabase/server";
+import { supabaseServer } from "@/lib/supabase/server";
+
 
 function isEmail(v: unknown) {
   return typeof v === "string" && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
