@@ -31,7 +31,7 @@ export default function Vendors() {
             <div className="flex flex-wrap gap-3">
               <a href={appStore} target="_blank" rel="noreferrer"><NeonButton>App Store</NeonButton></a>
               <a href={playStore} target="_blank" rel="noreferrer"><NeonButton>Google Play</NeonButton></a>
-              <NeonButton href="/waitlist" variant="ghost">Join Vendor Waitlist</NeonButton>
+              
             </div>
           </div>
         </NeonCard>
