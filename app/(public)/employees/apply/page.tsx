@@ -56,7 +56,7 @@ export default function EmployeeApplyPage() {
             <input name="phone" placeholder="Phone" className="w-full rounded-md p-3" />
             <input name="city" placeholder="City" className="w-full rounded-md p-3" />
             <input name="state" placeholder="State" className="w-full rounded-md p-3" />
-            <input name="start_date" type="date" className="w-full rounded-md p-3" />
+            <input name="date" type="birth_date" className="w-full rounded-md p-3" />
           </div>
 
           <textarea name="availability" placeholder="Availability (days/times)" className="w-full rounded-md p-3" />

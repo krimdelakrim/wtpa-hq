@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import NeonButton from "./NeonButton";
 
 export default function Header() {
@@ -6,9 +7,19 @@ export default function Header() {
     <header className="sticky top-0 z-30 backdrop-blur border-b border-white/10 bg-black/40">
       <div className="mx-auto max-w-6xl px-5 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-xl bg-white/10 neon-border flex items-center justify-center font-black">
-            W
+
+          {/* LOGO */}
+          <div className="h-10 w-10 rounded-xl overflow-hidden neon-border">
+            <Image
+              src="/wtpa1.jpg"
+              alt="WTPA Logo"
+              width={40}
+              height={40}
+              className="object-cover"
+              priority
+            />
           </div>
+
           <div>
             <div className="font-black leading-none text-white">WTPA HQ</div>
             <div className="text-xs text-white/60">Multi Talent Ventures, LLC</div>
@@ -18,7 +29,6 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-6 text-sm text-white/80">
           <Link href="/vendors" className="hover:text-white">Vendors</Link>
           <Link href="/employees" className="hover:text-white">Employees</Link>
-          <Link href="/waitlist" className="hover:text-white">Waitlist</Link>
           <Link href="/contact" className="hover:text-white">Contact</Link>
         </nav>
 
@@ -30,3 +40,4 @@ export default function Header() {
     </header>
   );
 }
+
