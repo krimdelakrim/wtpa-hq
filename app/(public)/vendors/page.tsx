@@ -1,9 +1,10 @@
 import NeonCard from "@/components/NeonCard";
 import NeonButton from "@/components/NeonButton";
+import { PLAYSTORE_URL, APPSTORE_URL } from "@/lib/links";
+
 
 export default function Vendors() {
-  const appStore = process.env.NEXT_PUBLIC_APPSTORE_URL!;
-  const playStore = process.env.NEXT_PUBLIC_PLAYSTORE_URL!;
+  
 
   return (
     <div className="space-y-8">
@@ -29,8 +30,14 @@ export default function Vendors() {
           <div className="space-y-3">
             <p>Download/open WTPA and claim your venue.</p>
             <div className="flex flex-wrap gap-3">
-              <a href={appStore} target="_blank" rel="noreferrer"><NeonButton>App Store</NeonButton></a>
-              <a href={playStore} target="_blank" rel="noreferrer"><NeonButton>Google Play</NeonButton></a>
+              <a href={APPSTORE_URL} target="_blank" rel="noreferrer">
+  <NeonButton>App Store</NeonButton>
+</a>
+
+<a href={PLAYSTORE_URL} target="_blank" rel="noreferrer">
+  <NeonButton>Google Play</NeonButton>
+</a>
+
               
             </div>
           </div>

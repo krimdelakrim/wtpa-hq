@@ -9,7 +9,7 @@ export default function Home() {
     <div className="space-y-10">
       <section className="neon-border rounded-3xl bg-white/[0.03] p-10">
         <div className="max-w-2xl space-y-4">
-          <div className="text-xs tracking-widest text-white/60">WTPA HQ</div>
+          <div className="text-xs tracking-widest text-white/60">Where The Party At HQ</div>
           <h1 className="text-4xl md:text-5xl font-black leading-tight">
             Where The Party At — powered by venues, run by outreach.
           </h1>
