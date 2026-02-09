@@ -13,7 +13,7 @@ export default function Employees() {
       </div>
 
       <div className="grid md:grid-cols-2 gap-5">
-        <NeonCard title="$15/hr Dallas/Houston/Biloxi(MS) Areas — weekly requirements">
+        <NeonCard title="$15/hr Dallas(TX)-Houston(TX)-Biloxi(MS) Areas — weekly requirements">
           <ul className="list-disc pl-5 space-y-2">
             <li><b>10 hours</b> logged minimum</li>
             <li><b>5 venues</b> contacted minimum</li>
