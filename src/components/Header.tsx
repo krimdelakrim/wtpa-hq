@@ -21,7 +21,7 @@ export default function Header() {
           </div>
 
           <div>
-            <div className="font-black leading-none text-white">WTPA HQ</div>
+            <div className="font-black leading-none text-white">Where The Party At HQ</div>
             <div className="text-xs text-white/60">Multi Talent Ventures, LLC</div>
           </div>
         </Link>
