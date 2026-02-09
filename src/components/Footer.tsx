@@ -5,7 +5,6 @@ export default function Footer() {
         <div>© {new Date().getFullYear()} Multi Talent Ventures, LLC — Where The Party App HQ</div>
         <div className="flex gap-5">
           <a className="hover:text-white" href="/contact">Contact</a>
-          
           <a className="hover:text-white" href="/employees">Work with us</a>
         </div>
       </div>

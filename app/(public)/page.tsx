@@ -45,7 +45,7 @@ export default function Home() {
           Claim your venue, control your profile, post events, and drop stories — all inside the WTPA app.
         </NeonCard>
         <NeonCard kicker="EMPLOYEES" title="$15/hr Outreach Program">
-          Minimum 10 hours/week, 5 venues contacted, 5 log entries, 1 weekly report — tracked in the portal.
+          Dallas/Houston/Biloxi(MS), Minimum 10 hours/week, 5 venues contacted, 5 log entries, 1 weekly report — tracked in the portal.
         </NeonCard>
         <NeonCard kicker="OPERATIONS" title="Admin Approvals">
           Admin reviews logs + weekly submissions to approve hours and ensure outreach is documented.
